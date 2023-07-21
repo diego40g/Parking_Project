@@ -15,6 +15,11 @@ int main()
 	strcat_s(QR, "ISTPET\n");
 	strcat_s(QR, "27/07/2023\n");
 	generarQr(QR);
+
+	Nodo* aux = new Nodo();
+	printf("\nINGRESE NOMBRE DEL PROPIETARIO:");
+	letras(aux->nombrePropietario);
+
     return 0;
 }
 
