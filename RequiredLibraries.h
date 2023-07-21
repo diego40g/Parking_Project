@@ -15,6 +15,7 @@
 #include <iomanip>
 #include <SDKDDKVer.h>
 #include <tchar.h>
+#include "Structs.h"
 
 using namespace std;
 typedef std::basic_ifstream<TCHAR> tifstream;

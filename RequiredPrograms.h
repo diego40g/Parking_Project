@@ -1,5 +1,8 @@
 #include "RequiredLibraries.h";
 #include "GenerateQR.h";
+#include "GeneratePDF.h";
+//#include "Structs.h";
+#include "Validations.h";
 
 #define WHITE_TEXT 7
 #define BLUE_TEXT 9
