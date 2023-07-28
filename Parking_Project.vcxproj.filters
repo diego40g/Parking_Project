@@ -21,12 +21,18 @@
     <ClCompile Include="GenerateQR.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="Qr_PDF.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RequiredLibraries.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="GenerateQR.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="RequiredPrograms.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

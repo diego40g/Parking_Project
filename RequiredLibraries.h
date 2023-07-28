@@ -100,8 +100,6 @@ void PrintFile(tifstream& f) {
 	ShowInformation(TEXT("La generación se realizo correctamente."));
 }
 
-#endif
-
 int menu() {
 	char c;
 	const char* fr[50] = { "INGRESAR PRIMER AUTO AL PARQUEADERO ",
@@ -132,7 +130,7 @@ int menu() {
 		}
 	}
 	do {
-		c = getch();
+		c = _getch();
 		gotoxy(20, y + 1);
 		color(BG_BLACK_WHITE_TEXT);
 		for (int i = y; i <= TOTAL_OPTIONS_MENU + 1; i++) {
@@ -140,7 +138,7 @@ int menu() {
 			cout << fr[i - 2];
 		}
 		if (c == -32) {
-			c = getch();
+			c = _getch();
 			if (c == PRESS_MOVE_UP) {
 				if (y == 2) {
 					y = TOTAL_OPTIONS_MENU + 1;
@@ -178,3 +176,4 @@ int menu() {
 
 
 }
+#endif
