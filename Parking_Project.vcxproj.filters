@@ -21,6 +21,9 @@
     <ClCompile Include="GenerateQR.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="QR_Pdf.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RequiredLibraries.h">
@@ -30,6 +33,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="GenerateQR.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="RequiredPrograms.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

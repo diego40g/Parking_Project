@@ -15,6 +15,8 @@
 #include <iomanip>
 #include <SDKDDKVer.h>
 #include <tchar.h>
+#include "GenerateQR.h"
+
 
 using namespace std;
 typedef std::basic_ifstream<TCHAR> tifstream;
