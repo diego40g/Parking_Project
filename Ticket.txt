@@ -1,0 +1,13 @@
+*********************************************************
+*														*
+*					TICKET DE ENTRADA					*
+* N° DE BOLETO: 5										*
+* NOMBRE CLIENTE: Natsy									*
+* CEDULA DEL CLIENTE: 1721681631						*
+* FECHA DE ENTRADA: 2023/08/04							*
+* HORA DE ENTRADA: 	16:30:00							*
+* PLACA DEL VEHICULO: IDP 4045							*
+* VEHICULO: CHEVROLET									*
+*														*
+*				     HORA O FRACCIÓN					*
+*********************************************************
