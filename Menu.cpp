@@ -77,3 +77,15 @@ int menu() {
 	} while (1);
 	return n;
 }
+
+void openFile(char* nameFile){
+	ShellExecute(NULL, TEXT("open"), TEXT(nameFile), NULL, NULL, SW_SHOWNORMAL);
+}
+
+void playSong(char *pathSong) {
+	char result[100];
+	strcpy_s(result, PATH_PROJECT);
+	strcat_s(result, pathSong);
+	cout << result;
+	PlaySound(result, NULL, SND_ASYNC);
+}
