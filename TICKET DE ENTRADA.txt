@@ -1,0 +1,10 @@
+*********************************************************
+*		TICKET DE ENTRADA			*
+* NOMBRE CLIENTE: DIEGO			*
+* CEDULA DEL CLIENTE: 1723469712			*
+* FECHA DE ENTRADA: viernes, 4 de agosto de 2023	*
+* HORA DE ENTRADA: 11:50:58				*
+* PLACA DEL VEHICULO: PRD-0741				*
+* VEHICULO: KIA					*
+*		HORA O FRACCION				*
+*********************************************************
