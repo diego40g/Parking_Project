@@ -1,7 +1,7 @@
 #include "RequiredLibraries.h";
 #include "GenerateQR.h";
 #include "GeneratePDF.h";
-//#include "Structs.h";
+#include "Structs.h";
 #include "Validations.h";
 
 #define WHITE_TEXT 7
@@ -15,6 +15,9 @@
 #define PRESS_ENTER 13
 #define PRESS_ESC 27
 #define PRESS_F1 59
+#define PATH_PROJECT "C:\\diegoRepositories\\Parking_Project\\"
+#define PATH_PDF "C:\\diegoRepositories\\Parking_Project\\Datos.pdf"
+#define FILE_NAME "LISTA PARQUEADERO.txt"
 
 void gotoxy(int x, int y);
 void color(int X);
@@ -23,6 +26,11 @@ int menu();
 
 void imprimirCar(int x);
 void carrito();
+void playSong(char*);
+void openFile(char*);
+
+int countLines();
+int savePDF();
 
 void printQr(const uint8_t qrcode[]);
 void generarQr(char* loqueimprime);
