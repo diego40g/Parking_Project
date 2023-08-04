@@ -23,4 +23,34 @@ void generarQr(char* loqueimprime)
 		printQr(qrcode);
 }
 
-
+int countLines() {
+	FILE* pf;
+	int ch, num = 0;
+	if (fopen_s(&pf, FILE_NAME, "r") == 0) {
+		while ((ch = fgetc(pf)) != EOF) {
+			if (ch == '\n') {
+				num++;
+			}
+		}
+	}
+	else {
+		return 0;
+	}
+	fclose(pf);
+	return num;
+}
+int savePDF() {
+	int x;
+	int imp;
+	printf("\nPresione Enter ");
+	for (;; ) {
+		x = _getch();
+		if (x == 13)
+		{
+			imp = 1;
+			printf("\nGenerando...");
+			break;
+		}
+	}
+	return imp;
+}
