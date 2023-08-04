@@ -1,5 +1,5 @@
 #pragma once
-struct Nodo {
+struct Node {
 	char horaEntrada[11];
 	char fechaEntrada[35];
 	char horaSalida[11];
@@ -9,16 +9,25 @@ struct Nodo {
 	float tarifaPagar;
 	char nombrePropietario[15];
 	char placaAuto[10];
-	struct Nodo* siguienteDireccion;
-	struct Nodo* anteriorDireccion;
+	struct Node* siguienteDireccion;
+	struct Node* anteriorDireccion;
 };
-struct ListaParqueadero {
+struct ParkingList {
 	char datos[75];
 };
-typedef struct ListaParqueadero autosDentro;
-typedef struct Nodo* ListaDoble;
-struct Placas {
+typedef struct ParkingList CarsInside;
+typedef struct Node* DoubleList;
+struct LicensePlates {
 	char letrasPlaca[3];
 	char numerosPlaca[4];
 };
-typedef struct Placas placa;
+typedef struct LicensePlates CarsLicense;
+
+void insertFirstData(DoubleList&);
+void insertLastPosition(DoubleList&);
+void insertFirstPosition(DoubleList&);
+void insertBetween(DoubleList&);
+void printList(DoubleList);
+void readList(DoubleList&, int);
+int exitParking(DoubleList);
+void fee(DoubleList);
