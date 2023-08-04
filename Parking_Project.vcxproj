@@ -134,6 +134,7 @@
     <ClCompile Include="GeneratePDF.cpp" />
     <ClCompile Include="GenerateQR.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="ParkingLogic.cpp" />
     <ClCompile Include="Parking_Project.cpp" />
     <ClCompile Include="QR_PDF.cpp" />
     <ClCompile Include="RequiredPrograms.cpp" />
