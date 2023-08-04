@@ -39,3 +39,21 @@ void flotantes(char* val) {
 		*(val + i) = '\0';
 	}
 }
+char* cardId() {
+	int cont = 0;
+	char* ced = (char*)malloc(10 * sizeof(char));
+	do {
+		system("cls");
+		cont = 0;
+		cout << "Ingrese su cedula: " << endl;
+		int c;
+		while ((c = _getch()) != 13) {
+			if ((c >= 48 && c <= 57)) {
+				*(ced + cont) = c;
+				cout << char(c);
+				cont++;
+			}
+		}
+	} while (cont > 10 || cont <= 9);
+	return ced;
+}
