@@ -35,12 +35,13 @@ enum qrcodegen_Mask {
 #ifdef __cplusplus
 extern "C" {
 #endif
-	bool qrcodegen_encodeText(const char* text, uint8_t tempBuffer[], uint8_t qrcode[],
-		enum qrcodegen_Ecc ecl, int minVersion, int maxVersion, enum qrcodegen_Mask mask, bool boostEcl);
-	bool qrcodegen_encodeBinary(uint8_t dataAndTemp[], size_t dataLen, uint8_t qrcode[],
-		enum qrcodegen_Ecc ecl, int minVersion, int maxVersion, enum qrcodegen_Mask mask, bool boostEcl);
-	int qrcodegen_getSize(const uint8_t qrcode[]);
-	bool qrcodegen_getModule(const uint8_t qrcode[], int x, int y);
+
+bool qrcodegen_encodeText(const char* text, uint8_t tempBuffer[], uint8_t qrcode[],
+	enum qrcodegen_Ecc ecl, int minVersion, int maxVersion, enum qrcodegen_Mask mask, bool boostEcl);
+bool qrcodegen_encodeBinary(uint8_t dataAndTemp[], size_t dataLen, uint8_t qrcode[],
+	enum qrcodegen_Ecc ecl, int minVersion, int maxVersion, enum qrcodegen_Mask mask, bool boostEcl);
+int qrcodegen_getSize(const uint8_t qrcode[]);
+bool qrcodegen_getModule(const uint8_t qrcode[], int x, int y);
 
 #ifdef __cplusplus
 }
