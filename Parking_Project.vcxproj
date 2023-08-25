@@ -42,7 +42,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -102,12 +102,13 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -127,10 +128,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AnimatedCart.cpp" />
+    <ClCompile Include="GeneratePDF.cpp" />
+    <ClCompile Include="GenerateQR.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="ParkingLogic.cpp" />
     <ClCompile Include="Parking_Project.cpp" />
+    <ClCompile Include="QR_Pdf.cpp" />
+    <ClCompile Include="RequiredPrograms.cpp" />
+    <ClCompile Include="Validations.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GeneratePDF.h" />
+    <ClInclude Include="GenerateQR.h" />
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="RequiredPrograms.h" />
     <ClInclude Include="RequiredLibraries.h" />
+    <ClInclude Include="Structs.h" />
+    <ClInclude Include="Validations.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Ticket.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
